@@ -14,12 +14,11 @@
   "contributes": {
     "commands": [
       {
-        "command": "vswidgets.helloWorld",
-        "title": "Hello World"
+        "command": "vswidgets.openWidget",
+        "title": "VSWidgets: Open Widget"
       }
     ]
-  },
-  "scripts": {
+  },  "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
     "watch": "webpack --watch",
