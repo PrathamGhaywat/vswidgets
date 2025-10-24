@@ -65,6 +65,13 @@ body {
 .widget-main h2 {
     color: var(--vscode-foreground);
     margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.widget-main p {
+    color: var(--vscode-descriptionForeground);
+    line-height: 1.6;
+    margin-bottom: 16px;
 }
 
 .widget-main ul {
@@ -76,4 +83,89 @@ body {
 
 .widget-main ul li {
     margin-bottom: 8px;
+}
+
+.status-section {
+    background-color: var(--vscode-input-background);
+    border: 1px solid var(--vscode-input-border);
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.status-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.status-item:not(:last-child) {
+    border-bottom: 1px solid var(--vscode-panel-border);
+}
+
+.status-label {
+    font-weight: 600;
+    color: var(--vscode-foreground);
+}
+
+.status-value {
+    color: var(--vscode-descriptionForeground);
+    font-family: var(--vscode-editor-font-family);
+}
+
+.action-section {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.action-btn {
+    background-color: var(--vscode-button-background);
+    color: var(--vscode-button-foreground);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: var(--vscode-button-hoverBackground);
+}
+
+.action-btn:active {
+    transform: translateY(1px);
+}
+
+.widget-footer {
+    padding: 12px 16px;
+    background-color: var(--vscode-statusBar-background);
+    border-top: 1px solid var(--vscode-panel-border);
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: var(--vscode-statusBar-foreground);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--vscode-editor-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--vscode-scrollbarSlider-background);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--vscode-scrollbarSlider-hoverBackground);
 }
